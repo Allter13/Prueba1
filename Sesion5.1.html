@@ -11,7 +11,18 @@
     }
     h1{color:blue}
      
-    
+    @media (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;      /* solo una columna */
+    grid-template-rows: 60px auto auto;
+    grid-template-areas:
+      "grid-item grid-item1"
+      "grid-item grid-item2"
+      "grid-item"
+      "grid-item"
+      "grid-item grid-item5";                     /* el sidebar pasa abajo */
+  }
+
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
